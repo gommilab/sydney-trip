@@ -67,11 +67,12 @@
   .hl {
     display: block; text-decoration: none; color: inherit;
     background: #fff; border: 1px solid var(--line); border-radius: 18px;
-    padding: 18px 16px; box-shadow: var(--shadow); transition: transform .15s ease;
+    overflow: hidden; box-shadow: var(--shadow); transition: transform .15s ease;
   }
   .hl:active { transform: scale(0.97); }
-  .hl .ic { font-size: 30px; line-height: 1; }
-  .hl .n { font-size: 17px; font-weight: 700; margin-top: 12px; letter-spacing: -0.02em; }
+  .hl .hl-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; background: var(--card); }
+  .hl .hl-txt { padding: 12px 14px 14px; }
+  .hl .n { font-size: 16px; font-weight: 700; letter-spacing: -0.02em; }
   .hl .d { font-size: 12px; color: var(--gray2); margin-top: 3px; font-weight: 600; }
 
   /* ===== Section ===== */
@@ -265,10 +266,12 @@
   <section class="section" id="highlights" style="padding-top:8px;">
     <div class="section-head"><h2>대표 코스</h2><p>카드를 누르면 해당 일정으로 이동합니다.</p></div>
     <div class="hl-grid">
-      <a class="hl" href="#d3"><div class="ic">⛰️</div><div class="n">블루마운틴</div><div class="d">6/29 월</div></a>
-      <a class="hl" href="#d4"><div class="ic">🌊</div><div class="n">울릉공 &amp; 키아마</div><div class="d">6/30 화</div></a>
-      <a class="hl" href="#d6"><div class="ic">🐋</div><div class="n">고래 크루즈</div><div class="d">7/2 목</div></a>
-      <a class="hl" href="#d2"><div class="ic">🎭</div><div class="n">오페라하우스</div><div class="d">6/28 일</div></a>
+      <a class="hl" href="#d3"><img class="hl-img" src="assets/klook/bluemountains-1.webp" alt="블루마운틴" loading="lazy" /><div class="hl-txt"><div class="n">블루마운틴</div><div class="d">6/29 월</div></div></a>
+      <a class="hl" href="#d4"><img class="hl-img" src="assets/klook/wollongong-1.webp" alt="울릉공 &amp; 키아마" loading="lazy" /><div class="hl-txt"><div class="n">울릉공 &amp; 키아마</div><div class="d">6/30 화</div></div></a>
+      <a class="hl" href="#d6"><img class="hl-img" src="assets/klook/whale-1.webp" alt="고래 크루즈" loading="lazy" /><div class="hl-txt"><div class="n">고래 크루즈</div><div class="d">7/2 목</div></div></a>
+      <a class="hl" href="#d2"><img class="hl-img" src="assets/klook/opera-1.webp" alt="오페라하우스" loading="lazy" /><div class="hl-txt"><div class="n">오페라하우스</div><div class="d">6/28 일</div></div></a>
+      <a class="hl" href="#d5"><img class="hl-img" src="assets/klook/bondi-1.webp" alt="본다이 비치" loading="lazy" /><div class="hl-txt"><div class="n">본다이 비치</div><div class="d">7/1 수</div></div></a>
+      <a class="hl" href="#d2"><img class="hl-img" src="assets/klook/darling-1.webp" alt="달링 하버" loading="lazy" /><div class="hl-txt"><div class="n">달링 하버</div><div class="d">6/28 일</div></div></a>
     </div>
   </section>
 
@@ -615,7 +618,7 @@
   <div class="foot">
     <div class="em">🐨</div>
     따뜻하게 입고, 천천히 둘러보고,<br>어머니 컨디션을 최우선으로.<br>좋은 여행 되세요.
-    <div style="margin-top:18px;font-size:11px;color:#b0b0b8;">일정 사진 출처 · Klook</div>
+    <div style="margin-top:18px;font-size:11px;color:#b0b0b8;">일정 사진 출처 · Klook / 본다이·달링하버 · Wikimedia Commons (CC BY-SA)</div>
   </div>
 
 </div>
